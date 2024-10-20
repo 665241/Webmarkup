@@ -1,0 +1,52 @@
+
+
+section{
+    display: flex;
+    flex-grow: 1;
+    
+}
+
+body{
+    
+    box-sizing: border-box;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+.box{
+        padding:  20px;
+    font-size: 50px;
+    text-align: center;
+    }
+    .left{
+        width: 10%;
+        background-color: blueviolet;
+    }
+    .right{
+        width: 80%;
+        height: auto;
+        background-color:brown;
+    }
+    .center{
+        width: 10%;
+        background-color:bisque;
+    }
+
+
+    header,footer{
+        min-height: 60px;
+    }
+   header{
+    background-color: lightgreen;
+
+   }
+    footer{
+        
+        background-color: lightcoral;
+    }
+    .button:hover {
+        background-color:  #000000;
+    }
+
+
