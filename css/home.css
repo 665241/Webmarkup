@@ -1,0 +1,272 @@
+* {
+    margin: 0; /*white space surrounding the element*/
+    padding: 0; /*inner space*/
+    box-sizing: border-box;
+    line-height: 1.5;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #a2d9ff, #2e89ff) no-repeat center fixed;
+    
+}
+
+header {
+    background-color: #191970;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 10px 10px 10px 45px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+nav a:hover {
+    background-color: rgba(246, 255, 0, 0.411);
+}
+
+.navbar ul li:first-child { /*logo*/
+    padding-top: 9px;
+}
+
+nav ul > li {
+    padding-left:10px;
+}
+h1,h2,h3{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.02em;
+}
+main > h3 {
+    padding-top: 30px;
+    padding-left: 45px;
+}
+
+.navbar a.active {
+    color: rgb(246, 255, 0);
+    border-bottom: 3px solid rgb(246, 255, 0);
+}
+
+h1 {
+    font-size: 1.5rem;; 
+    padding-top: 30px;
+    padding-left: 45px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 22px; 
+    color: white;
+    padding-top: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h3 {  
+    font-size: 20px; 
+    padding-left: 25px; 
+    margin-bottom: 100px
+}
+
+ p {
+    font-size: 18px; 
+    font-family: 'Merriweather', serif; 
+    letter-spacing: 0.05em;
+    text-indent: 30px;
+    word-spacing: 2px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.column-2 { /*first and 2nd image*/
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.column-2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.column-1 { /*3rd image*/
+    flex-basis: 100%; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.column-1 img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    margin-top: 5px; 
+}
+
+.footer {
+    background-color: #191970;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#aside {
+    margin: 20px;
+    padding: 20px;
+    background-color:#191970;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    float: right;
+}
+
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .column-2, .column-1 {
+        flex: 1 1 100%;
+    }
+
+    .column-1 img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+table {
+    margin-top: 10px;
+    background-color: #87CEEB;
+    border-collapse: collapse;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #dfdfdf;
+}
+
+.cookies-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color:#191970;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    z-index: 9999;
+}
+
+.cookies-message button {
+    background-color: #f5c518;
+    color:#191970;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cookies-message button:hover {
+    background-color: #ffd700;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+}
+
+
+
+.center_title {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px; 
+    padding-bottom: 50px;
+}
+
+.bottom-section p {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px;
+    text-align: center;
+}
+
+    
+    
+
+
+

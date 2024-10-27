@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/iceland favicon.png">
-    <title>Iceland Together</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/ILfavicon.png" type="image/x-icon">
+        <title>Iceland Together</title>
+        <link rel="stylesheet" type="text/css" href="css/Contact.css"> 
+        <meta name="description" content="Discover Iceland's breathtaking landscapes, from stunning waterfalls to volcanic terrains, and plan your perfect adventure.">
+        <meta name="keywords" content="Iceland, travel, adventure, landscapes, waterfalls, volcanic terrains">
+        <meta name="author" content="Mahmoud Hashish">
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <h1>Iceland Together!</h1   >
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Attractions.html">Attractions</a></li>
-            <li><a href="Hiking.html">Hiking</a></li>
-            <li><a href="Tours.html">Tours</a></li>
-            <li><a href="Food.html">Food</a></li>
-            <li><a href="Contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h3>
-            Contact us
-        </h3>
-    
-        <fieldset>
-        <legend>Personal information:</legend>
-        
-        <form action="https://coolinhollanddemo.azurewebsites.net/" method="POST"class="my-form">
-            <label for="email">Enter your email:</label>
-            <input type="email" name="email" required>
-            <label for="name">Enter your name:</label>
-            <input type="text" name="name" required>
-            <label for="age">Enter your age:</label>
-            <input type="number" name="age" required>
-            <label for="gender">Enter your gender:</label>
-            <input type="text" name="gender">
-            
-            <label for="submit-button">Submit your details:</label>
-            
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <input class="button" type="submit" value="Submit">
-        </form>
-    </fieldset>
-    
-    </section>
 
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <img class="icon" src="img/logo.png" alt="Iceland Together Logo" title="Iceland_together_logo">
+                </li>
+                <li><h2>Iceland Together</h2></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Attractions.html">Attractions</a></li>
+                <li><a href="Hiking.html">Hiking</a></li>
+                <li><a href="Tours.html">Tours</a></li>
+                <li><a href="Food.html">Food</a></li>      
+                <li><a href="Contact.html" class="active">Contact</a></li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h1>Get in Touch with Us!</h1>
+            <p>
+                Whether you have a question or need more information about our tours, feel free to reach out.
+                We're here to <em>help</em> make your journey unforgettable. Contact us via the form below. We'll get
+                back to you as soon as possible. Safe travels and we hope to see you in Iceland soon!
+            </p>
+            <p id="mandatory-text">Fields with an asterisk (*) are mandatory.</p>
     
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+            
+                    <label for="name">Full Name*</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+            
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+            
+                    <label for="message">What can we help you with?*</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+
+    <footer class="footer">
+        <p>&copy; 2024 Iceland Together. All Rights Reserved.</p>
+        
+    </footer>
+
 </body>
 </html>

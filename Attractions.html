@@ -1,44 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/test2.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/iceland favicon.png">
-    <title>Iceland Together</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/ILfavicon.png" type="image/x-icon">
+        <title>Iceland Together</title>
+        <link rel="stylesheet" type="text/css" href="css/detail_pages.css"> 
+        <meta name="description" content="Discover Iceland's breathtaking landscapes, from stunning waterfalls to volcanic terrains, and plan your perfect adventure.">
+        <meta name="keywords" content="Iceland, travel, adventure, landscapes, waterfalls, volcanic terrains">
+        <meta name="author" content="Mahmoud Hashish">
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <h1>Iceland Together!</h1>
-    
-    <nav class="navbar">
-        <ul>
+
+    <header>
+        <nav class="navbar">
+          <ul>
+            <li>
+              <img class="icon" src="img/logo.png" alt="Layout_of_iceland's_map" title="Iceland_together_logo">
+            </li>
+            <li><h2>Iceland Together</h2></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="Attractions.html">Attractions</a></li>
-            <li><a href="Hiking.html" >Hiking</a></li>
+            <li><a href="Attractions.html" class="active">Attractions</a></li>
+            <li><a href="Hiking.html">Hiking</a></li>
             <li><a href="Tours.html">Tours</a></li>
-            <li><a href="Food.html"class="active">Food</a></li>
-            <li><a href="Contact.html"class="contact">Contact</a></li>
-        </ul>
-        
-    </nav>
-    <h2>Best places to hike:</h2>
-    <section class="image-section">
-        <figure>
-            <img src="/img/Hiking.jpg" alt="A beautiful view of Paris">
-            <figcaption>.</figcaption>
-        </figure>
-    </section>
-    <section class="image-section">
-        <figure>
-            <img src="/img/Hiking1.jpg" alt="A beautiful view of Paris">
-            <figcaption>.</figcaption>
-        </figure>
-    </section>
-    <section class="image-section">
-        <figure>
-            <img src="/img/Hiking2.jpg" alt="A beautiful view of Paris">
-            <figcaption>.</figcaption>
-        </figure>
-    </section>
+            <li><a href="Food.html">Food</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="table.html">Table</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <main>
+        <h1>Skógafoss Waterfall:</h1>
+        <section class="image-text">
+            <h2 class="visually-hidden">Attractions in Iceland</h2>
+            <article class="detail_page_article">
+                <h3>Exploring the Skógafoss Waterfall</h3> 
+                <p>Skógafoss Waterfall is a very attractive spot where you can hike on a trail that starts at Skógafoss Waterfall and follows the Skóga river upstream for 8 kilometers. 
+                    The best time to undertake this hike is from June through September, when the trail is typically free of snow and easily accessible.
+                </p>
+                
+            </article>
+            <figure>
+                <img class="attraction-image" src="img/attraction1.jpg" alt="Skógafoss Waterfall with visitors walking towards it on a bright day in Iceland" title="Skógafoss Waterfall in Southern Iceland">
+                <figcaption>Visitors walking towards Skógafoss Waterfall, one of Iceland’s largest waterfalls</figcaption>
+            </figure>
+        </section>
+
+        <section class="image-text swapped">
+            <h2 class="visually-hidden">Attractions in Iceland</h2>
+            <article class="detail_page_article">
+                <h3>Walking along Skógá River</h3> 
+                <p>As you hike through this stunningly beautiful green landscape, you will encounter not just one, but 25 additional waterfalls cascading down the mountains, as well as majestic glacier-capped volcanoes rising dramatically in the distance. This breathtaking scenery creates a magical atmosphere, making each step of your journey a delightful surprise filled with natural wonders and picturesque views.</p>
+            </article>
+            <figure class="mid-pic">
+                <img class="attraction-image" src="img/attraction2.jpg" alt="Skógá River cutting through the green hills with a small waterfall visible in the background" title="Walking along the Skógá River">
+                <figcaption>View of the Skógá River</figcaption>
+            </figure>
+        </section>
+
+        <section class="image-text">
+            <h2 class="visually-hidden">Attractions in Iceland</h2>
+            <article class="detail_page_article">
+                <h3>When to visit</h3> 
+                <p>
+                    If you’re looking to experience Skógafoss Waterfall all by yourself, we recommend arriving very early in the morning or later in the day to avoid the crowds. This stunning waterfall is a very popular tourist attraction, and even during those times, you may not find it completely empty, especially during the high season. However, if you’re traveling in late autumn, consider visiting after dark, when the northern lights dance across the sky, adding an enchanting touch to the experience and making it even more magical.
+                </p>
+            </article>
+            <figure>
+                <img class="attraction-image" src="img/attraction3.jpg" alt="Skógá River winding through green hills with hikers walking along the canyon trail in Iceland" title="Skógá River Canyon in Southern Iceland">
+                <figcaption>Hikers walking along the trail beside the Skógá River</figcaption>
+            </figure>
+            <aside class="a-side">
+                <p>Learn more about <a href="https://www.earthtrekkers.com/skogafoss-waterfall-way-hike/" target="_blank">Skógafoss</a></p>
+            </aside>
+            
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Iceland Together. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
